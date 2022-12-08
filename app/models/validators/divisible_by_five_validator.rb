@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# IsPositiveIntegerDivisibleByFive custom validator
+# DivisibleByFive custom validator
 class DivisibleByFive < ActiveModel::Validator
   def validate(record)
     return if (record.duration % 5).zero?
